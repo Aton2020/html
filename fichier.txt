@@ -1,0 +1,5 @@
+Structures conditionnelles 
+
+SI quelque chose est vrai ALORS je fais qqch SINON je fais autre chose
+
+Une condition ne peut avoir que 2 valeurs possibles : vrai ou faux

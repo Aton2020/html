@@ -1,0 +1,43 @@
+STRUCTURES CONDITIONNELLES 
+
+SI quelque chose est vrai ALORS je fais qqch SINON je fais autre chose 
+
+Une condition ne peut avoir que 2 valeurs possibles : vrai ou faux
+
+SI il n'est pas 16 h ET qu'il fait beau ALORS on arrête à 16 h
+SI il n'est pas 16 h OU qu'il fait beau ALORS on arrête à 16 h
+
+Assertions (après si)
+
+SI a ET b ALORS c 
+SI a OU b ALORS c 
+
+a et b ne peuvent avoir comme valeur que vrai ou faux 
+
+a=V b=V => a ET b = V 
+a=F b=V => a ET b = F 
+a=F b=F => a ET b = F 
+a=V b=F => a ET b = F 
+
+ex: 
+    Cas d'un formulaire de connexion :
+    a correspond à : l'identitfiant existe
+    b correspond à : le mot de passe est correct
+
+a=V b=v     => a OU b = V 
+a=F b=v     => a OU b = V 
+a=F b=F     => a OU b = F 
+a=V b=F     => a OU b = V               Ce sont des tables de vérité ; les BOOLEANS - ne marche qu'avec 2 valeurs
+
+
+a * b équivalent à a ET b, si a et b ne peuvent avoir comme valeur aue 0 ou 1
+a=1 b=1 =>  a * b = 1 
+a=0 b=1 =>  a * b = 0
+a=0 b=0 =>  a * b = 0 
+a=1 b=0 =>  a * b = 0 
+
+a + b équivalent à a OU b, si a et b ne peuvent avoir comme valeur aue 0 ou 1
+a=1 b=1 =>  a + b = 1   avec OU 
+a=0 b=1 =>  a + b = 1
+a=0 b=0 =>  a + b = 0 
+a=1 b=0 =>  a + b = 1
